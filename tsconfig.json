@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "target": "es2020",
+    "module": "es2020",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "config/*": ["./src/config/*"],
+      "helpers/*": ["./src/helpers/*"],
+      "models/*": ["./src/api/models/*"],
+      "controllers/*": ["./src/api/controllers/*"],
+      "routes/*": ["./src/api/routes/*"],
+      "validations/*": ["./src/api/validations/*"]
+    }
+  },
+  "include": [
+    "./__tests__/**/*",
+    "./src/index.ts",
+    "./src/**/*"
+  ],
+  "exclude": ["node_modules"]
+}
