@@ -11,12 +11,21 @@
     "start": "cross-env NODE_ENV=production node ./index.js",
     "live": "cross-env NODE_ENV=production pm2 start ./src/index.js --name api",
     "die": "pm2 stop ./src/index.js",
+    "format": "prettier --write src/.",
     "lint": "eslint ./src/ --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "yarn lint --fix",
     "test": "cross-env NODE_ENV=test jest --config ./jest.config.js",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "test:coverage": "cross-env NODE_ENV=test jest --coverage",
-    "test:coverage-report": "cross-env NODE_ENV=test jest --coverage && open-cli ./coverage/lcov-report/index.html"
+    "test:coverage-report": "cross-env NODE_ENV=test jest --coverage && open-cli ./coverage/lcov-report/index.html",
+    "type-check": "tsc --pretty --noEmit",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.(ts|tsx)": [
+      "prettier --write --ignore-unknown",
+      "eslint"
+    ]
   },
   "dependencies": {
     "@babel/core": "^7.12.17",
@@ -36,7 +45,6 @@
     "@types/jsonwebtoken": "^8.5.0",
     "@types/lodash": "^4.14.168",
     "@types/mongodb": "^3.6.8",
-    "@types/mongoose": "^5.10.3",
     "@types/node": "^14.14.31",
     "babel-plugin-module-resolver": "^4.1.0",
     "bcryptjs": "^2.4.3",
@@ -61,16 +69,21 @@
     "@babel/plugin-transform-runtime": "^7.12.17",
     "@babel/preset-typescript": "^7.12.17",
     "@babel/register": "^7.12.13",
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
     "@shelf/jest-mongodb": "^1.2.3",
     "@typescript-eslint/eslint-plugin": "^4.15.2",
     "@typescript-eslint/parser": "^4.15.2",
     "eslint": "^7.20.0",
     "eslint-plugin-jest": "^24.1.5",
     "hapi-swagger": "^14.1.0",
+    "husky": "^6.0.0",
     "jest": "^26.6.3",
+    "lint-staged": "^10.5.4",
     "mongodb": "^3.6.4",
     "mongodb-memory-server": "^6.9.3",
     "nodemon": "^2.0.7",
-    "opener": "^1.5.2"
+    "opener": "^1.5.2",
+    "prettier": "^2.2.1"
   }
 }
