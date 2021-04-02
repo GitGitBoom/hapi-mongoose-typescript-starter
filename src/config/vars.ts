@@ -3,7 +3,7 @@ import DotEnv from 'dotenv-safe';
 
 // If env vars not set by docker or kube, try to import the dev .env file
 /* istanbul ignore else */
-if (!process.env.IS_DOCKER_CONTAINER) {
+if (!process.env.IS_DOCKER_CONTAINER && !process.env.CI) {
   DotEnv.config({
     path: path.join(__dirname, '../../.env'),
     sample: path.join(__dirname, '../../.env.example'),
