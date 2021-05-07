@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/GitGitBoom/hapi-mongoose-typescript-starter.svg?branch=main)](https://travis-ci.org/GitGitBoom/hapi-mongoose-typescript-starter)
+
 # hapi-mongoose-typescript-starter
 #### A boilerplate for Hapi.js
 A strongly typed rest API with ready built user registration and authorization.
