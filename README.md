@@ -3,7 +3,7 @@
 A strongly typed rest API with ready built user registration and authorization.
 
 ## Getting started
-####Installation
+#### Installation
 ```
 yarn install
 ```
