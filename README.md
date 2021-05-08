@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/GitGitBoom/hapi-mongoose-typescript-starter.svg?branch=main)](https://travis-ci.org/GitGitBoom/hapi-mongoose-typescript-starter)
+[![Coverage Status](https://coveralls.io/repos/github/GitGitBoom/hapi-mongoose-typescript-starter/badge.svg?branch=coveralls)](https://coveralls.io/github/GitGitBoom/hapi-mongoose-typescript-starter?branch=coveralls)
 
 # hapi-mongoose-typescript-starter
 #### A boilerplate for Hapi.js

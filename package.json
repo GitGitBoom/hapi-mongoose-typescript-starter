@@ -74,6 +74,7 @@
     "@shelf/jest-mongodb": "^1.2.3",
     "@typescript-eslint/eslint-plugin": "^4.15.2",
     "@typescript-eslint/parser": "^4.15.2",
+    "coveralls": "^3.1.0",
     "eslint": "^7.20.0",
     "eslint-plugin-jest": "^24.1.5",
     "hapi-swagger": "^14.1.0",
