@@ -57,7 +57,7 @@
     "http-status": "^1.5.0",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
-    "mongoose": "^5.11.17",
+    "mongoose": "^6.4.6",
     "nodemailer": "^6.5.0",
     "pm2": "^4.5.4",
     "ts-node": "^9.1.1",
