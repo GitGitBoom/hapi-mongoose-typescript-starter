@@ -4255,14 +4255,14 @@ handlebars@^4.1, handlebars@^4.5.3:
   optionalDependencies:
     uglify-js "^3.1.4"
 
-hapi-auth-jwt2@^10.2.0:
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/hapi-auth-jwt2/-/hapi-auth-jwt2-10.2.0.tgz#213015f77b8d4e6a103cbe348b2d8e64d31d57e2"
-  integrity sha512-6Xkt0LHNBglYWOlFulNgf5pUPqRGMKpAHZjwEZqC8/07TVlgxr240pENctrthcLi8k/yCunm7x2xCSLNyTGKmg==
+hapi-auth-jwt2@^10.4.0:
+  version "10.4.0"
+  resolved "https://registry.yarnpkg.com/hapi-auth-jwt2/-/hapi-auth-jwt2-10.4.0.tgz#4cb52d6bb7c4b641e602f52a4ce35303c758feae"
+  integrity sha512-x733a6bdLSd0bMQeuvkENlNwLRHzsenhoUan7JQLEIizqTWPzPJtukixjx+LCLMyC/5BG3Si4npVB5mqfIMAog==
   dependencies:
     "@hapi/boom" "^9.0.0"
     cookie "^0.4.0"
-    jsonwebtoken "^8.5.1"
+    jsonwebtoken "^9.0.0"
 
 hapi-swagger@^14.1.0:
   version "14.1.0"
@@ -5386,6 +5386,16 @@ jsonwebtoken@^8.5.1:
     lodash.once "^4.0.0"
     ms "^2.1.1"
     semver "^5.6.0"
+
+jsonwebtoken@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/jsonwebtoken/-/jsonwebtoken-9.0.0.tgz#d0faf9ba1cc3a56255fe49c0961a67e520c1926d"
+  integrity sha512-tuGfYXxkQGDPnLJ7SibiQgVgeDgfbPq2k2ICcbgqW8WxWLBAxKQM/ZCu/IT8SOSwmaYl4dpTFCW5xZv7YbbWUw==
+  dependencies:
+    jws "^3.2.2"
+    lodash "^4.17.21"
+    ms "^2.1.1"
+    semver "^7.3.8"
 
 jsprim@^1.2.2:
   version "1.4.1"
@@ -7205,6 +7215,13 @@ semver@^7.2, semver@^7.2.1, semver@^7.3.2:
   version "7.3.4"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.4.tgz#27aaa7d2e4ca76452f98d3add093a72c943edc97"
   integrity sha512-tCfb2WLjqFAtXn4KEdxIhalnRtoKFN7nAwj0B3ZXCbQloV2tq5eDbcTmT68JJD3nRJq24/XgxtQKFIpQdtvmVw==
+  dependencies:
+    lru-cache "^6.0.0"
+
+semver@^7.3.8:
+  version "7.3.8"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.8.tgz#07a78feafb3f7b32347d725e33de7e2a2df67798"
+  integrity sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==
   dependencies:
     lru-cache "^6.0.0"
 
