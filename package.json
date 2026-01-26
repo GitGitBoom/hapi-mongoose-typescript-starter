@@ -56,7 +56,7 @@
     "hapi-auth-jwt2": "^10.2.0",
     "http-status": "^1.5.0",
     "jsonwebtoken": "^8.5.1",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "mongoose": "^5.11.17",
     "nodemailer": "^6.5.0",
     "pm2": "^4.5.4",
